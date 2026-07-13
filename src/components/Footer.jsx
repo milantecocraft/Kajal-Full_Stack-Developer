@@ -23,6 +23,26 @@ export default function Footer() {
               </a>
             </li>
           ))}
+          <li>
+            <a
+              href={profile.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-medium text-muted transition-colors hover:text-ink"
+            >
+              LinkedIn ↗
+            </a>
+          </li>
+          <li>
+            <a
+              href={profile.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs font-medium text-muted transition-colors hover:text-ink"
+            >
+              GitHub ↗
+            </a>
+          </li>
         </ul>
       </div>
     </footer>

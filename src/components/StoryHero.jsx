@@ -4,8 +4,10 @@ import {
   useScroll,
   useTransform,
   useMotionValueEvent,
+  useReducedMotion,
 } from 'framer-motion'
 import { profile } from '../data/content.js'
+import Hero from './Hero.jsx'
 
 const acts = [
   { n: '01', label: 'The idea' },
@@ -29,6 +31,14 @@ function Counter({ progress, to, suffix, label, range }) {
 }
 
 export default function StoryHero() {
+  // Users who prefer reduced motion get the static hero instead of the
+  // pinned scroll narrative.
+  const reduceMotion = useReducedMotion()
+  if (reduceMotion) return <Hero />
+  return <StoryHeroScrub />
+}
+
+function StoryHeroScrub() {
   const ref = useRef(null)
   const [act, setAct] = useState(0)
   const { scrollYProgress } = useScroll({

@@ -40,7 +40,9 @@ export default function Navbar() {
 
           <div className="flex items-center gap-2">
             <motion.a
-              href={`mailto:${profile.email}`}
+              href={profile.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               className="hidden items-center gap-2 rounded-full bg-ink px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-accent md:inline-flex"
@@ -96,7 +98,9 @@ export default function Navbar() {
                 ))}
                 <li className="mt-2 border-t border-line pt-3">
                   <a
-                    href={`mailto:${profile.email}`}
+                    href={profile.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="block rounded-full bg-ink px-4 py-3 text-center text-sm font-semibold text-white"
                   >
                     Let&apos;s talk ↗
