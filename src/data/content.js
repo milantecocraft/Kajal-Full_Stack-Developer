@@ -142,6 +142,7 @@ export const topSkills = ['React.js', 'Next.js', 'JavaScript', 'HTML', 'Node.js'
 export const projects = [
   {
     title: 'AI Customer-Support Chatbot',
+    image: '/projects/chatbot.webp',
     category: 'AI & SaaS',
     role: 'AI workflow design & integration',
     outcome: '+25% operational speed',
@@ -152,6 +153,7 @@ export const projects = [
   {
     title: 'vidBoard.ai',
     url: 'https://www.vidboard.ai/',
+    image: '/projects/vidboard.webp',
     category: 'AI & SaaS',
     role: 'Full-stack development - video pipeline & creator dashboard',
     outcome: '~60% faster video turnaround',
